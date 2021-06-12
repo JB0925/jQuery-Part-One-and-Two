@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parent {
+    position: relative;
+    background-image: linear-gradient(135deg, #118AB2, #06D6A0);
+    background-size: cover;
+    min-height: 50vh;
+    min-width: 80vw;
+    z-index: 1;
+}
+
+.parent h1 {
+    position: absolute;
+    margin-left: 5%;
+    top: 20%;
+    font-size: 100px;
+    opacity: .1;
+}
+
+.parent h3 {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    left: 8%;
+    color: white;
+}
+
+.parent p {
+    position: absolute;
+    color: white;
+    top: 70%;
+    left: 5.5%;
+    font-size: 15px;
+    font-weight: 100;
+    width: 25%;
+    line-height: 1.8rem;
+}
+
+.parent img {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    width: 20%;
+}
+
+.custom-shape-divider-top-1623469618 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.custom-shape-divider-top-1623469618 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 181px;
+}
+
+.custom-shape-divider-top-1623469618 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.info {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    width: 35vw;
+    line-height: 2.8rem;
+}
+
+form label {
+    align-self: flex-start;
+    margin-left: 29.5%;
+}
+
+form input {
+    height: 35px;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+}
+
+form button {
+    background-image: linear-gradient(135deg, #118AB2, #06D6A0);
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 35px;
+    width: 42%;
+    border-radius: 5px;
+}
+
+.ratings {
+    background-color: green;
+    height: 40vh;
+    width: 35vw;
+}

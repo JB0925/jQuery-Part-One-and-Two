@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" 
+          rel="stylesheet"> 
     <link rel="stylesheet" href="part_two.css">
     <title>Movie Ratings</title>
 </head>
 <body>
+    <div class="parent">
+        <h1>Movie App</h1>
+        <h3>Rate Your Movies</h3>
+        <p>Have strong feelings about a movie? Rate it here by
+            entering the movie title and your rating. Ratings must be
+            between 0 and 10.
+        </p>
+        <img src="movies.svg" alt="Watch Movies">
+        <div class="custom-shape-divider-top-1623469618">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+    <div class="info">
+        <form action="#">
+            <label for="title">Enter a Title</label>
+            <input type="text" name="title" id="title" minlength="2" pattern="[A-Za-z0-9\s]{2,}" placeholder="Title">
+            <label for="rating">Enter Your Rating</label>
+            <input type="number" name="rating" id="rating" min="0" max="10" placeholder="Rating">
+            <button type="submit">Submit Your Rating</button>
+        </form>
+        <div class="ratings"></div>
+    </div>
     <script src="part_two.js"></script>
 </body>
 </html>
