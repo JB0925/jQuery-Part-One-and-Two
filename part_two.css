@@ -22,14 +22,31 @@ nav li {
 }
 
 nav li:hover {
-    font-size: 30px;
+    font-size: 26px;
 }
 
 nav a {
+    position: relative;
     text-decoration: none;
     color: #118AB2;
 }
 
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #06D6A0;
+    visibility: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
 
 .parent {
     position: relative;
