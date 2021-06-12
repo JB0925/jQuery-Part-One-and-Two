@@ -11,6 +11,13 @@
     <title>Movie Ratings</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <div class="parent">
         <h1>Movie App</h1>
         <h3>Rate Your Movies</h3>
@@ -31,10 +38,15 @@
             <input type="text" name="title" id="title" minlength="2" pattern="[A-Za-z0-9\s]{2,}" placeholder="Title">
             <label for="rating">Enter Your Rating</label>
             <input type="number" name="rating" id="rating" min="0" max="10" placeholder="Rating">
-            <button type="submit">Submit Your Rating</button>
+            <button type="submit" id="submit">Submit Your Rating</button>
         </form>
-        <div class="ratings"></div>
+        <div class="ratings">
+            <ul></ul>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
     <script src="part_two.js"></script>
 </body>
 </html>

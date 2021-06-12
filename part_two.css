@@ -4,6 +4,33 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 50px;
+    font-size: 24px;
+    transition: font-size .8s ease-in-out;
+}
+
+nav li:hover {
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #118AB2;
+}
+
+
 .parent {
     position: relative;
     background-image: linear-gradient(135deg, #118AB2, #06D6A0);
@@ -108,7 +135,26 @@ form button {
 }
 
 .ratings {
-    background-color: green;
     height: 40vh;
     width: 35vw;
+}
+
+.ratings ul {
+    list-style: none;
+    width: 100%;
+}
+
+.ratings li {
+    transition: opacity 1s ease-in;
+}
+
+.ratings button {
+    background-image: linear-gradient(135deg, #118AB2, #06D6A0);
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    height: 35px;
+    width: 20%;
+    border-radius: 5px;
+    margin-left: 20px;
 }
